@@ -43,7 +43,7 @@ def predict(image, mask, prompt):
 # Define Gradio interface with mask editing capabilities
 gr.Interface(
     fn=predict,
-    title='FreshFits by Pixlr (Stable Diffusion In-Painting Tool)',
+    title='FreshFits (Stable Diffusion In-Painting Tool)',
     description='Upload an image, create or edit a mask using the built-in editor, and provide a description to generate a new image based on your prompt.',
     inputs=[
         gr.Image(label='Upload or Edit Image', source='upload', tool='editor', type='pil'),
